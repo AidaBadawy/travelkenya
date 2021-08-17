@@ -26,11 +26,11 @@ function Navbar() {
                 <span className='nav-icon'></span>
             </label>
             <ul className='menu'>
-                <Link className='link'><li>Home</li></Link>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Attractions</a></li>
-                <li><a href='#'>Tours</a></li>
-                <li><a href='#'>Contact Us</a></li>
+                <li><Link>Home</Link></li>
+                <li><Link>About</Link></li>
+                <li><Link>Attractions</Link></li>
+                <li><Link>Tours</Link></li>
+                <li><Link>Contact Us</Link></li>
             </ul>
         </nav>
         // <div className='hero'>
