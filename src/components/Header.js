@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 import MultipleItems from "./MultipleItems"
 function Header() {
     return (
-        <div className='main'>
+        <div id='main'>
             <Navbar/>
             <div className='text'>
                 <h1>Discover <br></br>Kenya</h1>

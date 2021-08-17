@@ -1,24 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
-*{
+body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
+}
+*{
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
   display: none;
-}
-.main {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/background1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-
 }
 
 ul{
@@ -28,6 +20,23 @@ a{
   text-decoration: none;
 }
 
+#main {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+
+}
+.logo {
+  color: #ffffff;
+}
+.logo-active{
+  color: brown;
+  text-decoration: none;
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -42,11 +51,18 @@ nav{
   }
   nav.active{
   box-shadow: 5px 10px 30px rgba(0, 247, 255, 0.157);
-  background-color: #ffffff;
+  background-color: brown;
+  
   }
   nav ul{
   display: flex;
   }
+  .active{
+    background-color: #00b7ff;
+    color:#ffffff;
+    box-shadow: 5px 10px 30px rgba(189, 198, 64, 0.411);
+    transition: all ease 0.2s;
+    }
 
   nav ul li a{
     font-family: calibri;
@@ -58,53 +74,35 @@ nav{
     font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 500;
-    color:#000000;
+    color:#ffffff;
     letter-spacing: 1px;
     border-radius: 3px;
     transition: 0.2s ease-in-out;
     }
-    nav ul li a:after{
-      content: '';
+  nav ul li :after{
+    content: '';
   display: block;
   width: 0%;
   height: 2px;
   background: #ffffff;
   margin: auto;
   transition: .4s;
-      }
+    }
+  nav ul li :hover:after{
+    width: 100%;
 
-      nav ul li a:hover:after{
-        width: 100%;
-      }
+  }
+
 
     nav .menu-btn,
 .menu-icon{
   display:none;
 }
 
-.logo {
-  color: white;
-  font-size: 30px;
-  margin-right: auto;
-}
-
 span {
   font-weight: 400;
 }
 
-.content ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px 30px;
-  cursor: pointer;
-}
-
-.content ul a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
 
 .content ul li:after {
   content: '';
