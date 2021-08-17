@@ -33,10 +33,7 @@ a{
 .logo {
   color: #ffffff;
 }
-.logo-active{
-  color: brown;
-  text-decoration: none;
-}
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -57,30 +54,24 @@ nav{
   nav ul{
   display: flex;
   }
-  .active{
-    background-color: #00b7ff;
-    color:#ffffff;
-    box-shadow: 5px 10px 30px rgba(189, 198, 64, 0.411);
-    transition: all ease 0.2s;
-    }
 
-  nav ul li {
-    cursor: pointer;
-    font-family: calibri;
-    text-decoration: none;
-    height:40px;
-    line-height: 43px;
-    margin: 3px;
-    padding: 0px 22px;
-    display: flex;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    color:#ffffff;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    transition: 0.2s ease-in-out;
-    }
+nav ul li {
+  cursor: pointer;
+  font-family: calibri;
+  text-decoration: none;
+  height:40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:#ffffff;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+  }
   nav ul li :after{
   content: '';
   display: block;
@@ -92,7 +83,6 @@ nav{
     }
   nav ul li :hover:after{
     width: 100%;
-
   }
 
 nav .menu-btn,
@@ -103,21 +93,6 @@ nav .menu-btn,
 span {
   font-weight: 400;
 }
-
-
-/* .content ul li:after {
-  content: '';
-  display: block;
-  width: 0%;
-  height: 2px;
-  background: #ffffff;
-  margin: auto;
-  transition: .4s;
-}
-
-.content ul li:hover:after {
-  width: 100%;
-} */
 
 .text {
   position: absolute;
@@ -136,7 +111,7 @@ h1 {
   width: 35%;
   position: absolute;
   right: 20px;
-  top: 40%;
+  top: 35%;
   display: block;
 }
 
