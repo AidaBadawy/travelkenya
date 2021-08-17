@@ -17,7 +17,7 @@ function Navbar() {
     }
     window.addEventListener('scroll', changeBackground)
     return (
-        <nav className={nav ? 'nav active' : 'nav'}>
+        <nav className={nav ? 'nav active' : 'nav'} id='content'>
             <a href='#' className='logo-ref'>
                 <h2 className='logo'>Travel<span>Kenya</span></h2>
             </a>
@@ -26,7 +26,7 @@ function Navbar() {
                 <span className='nav-icon'></span>
             </label>
             <ul className='menu'>
-                <li><a href='#'>Home</a></li>
+                <Link><li>Home</li></Link>
                 <li><a href='#'>About</a></li>
                 <li><a href='#'>Attractions</a></li>
                 <li><a href='#'>Tours</a></li>
