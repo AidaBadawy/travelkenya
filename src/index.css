@@ -80,8 +80,8 @@ nav{
     border-radius: 3px;
     transition: 0.2s ease-in-out;
     }
-  #content ul li :after{
-    content: '';
+  nav ul li :after{
+  content: '';
   display: block;
   width: 0%;
   height: 2px;
@@ -89,13 +89,12 @@ nav{
   margin: auto;
   transition: .4s;
     }
-  #content ul li :hover:after{
+  nav ul li :hover:after{
     width: 100%;
 
   }
 
-
-    nav .menu-btn,
+nav .menu-btn,
 .menu-icon{
   display:none;
 }
@@ -105,7 +104,7 @@ span {
 }
 
 
-.content ul li:after {
+/* .content ul li:after {
   content: '';
   display: block;
   width: 0%;
@@ -117,7 +116,7 @@ span {
 
 .content ul li:hover:after {
   width: 100%;
-}
+} */
 
 .text {
   position: absolute;

@@ -26,7 +26,7 @@ function Navbar() {
                 <span className='nav-icon'></span>
             </label>
             <ul className='menu'>
-                <Link><li>Home</li></Link>
+                <Link className='link'><li>Home</li></Link>
                 <li><a href='#'>About</a></li>
                 <li><a href='#'>Attractions</a></li>
                 <li><a href='#'>Tours</a></li>
