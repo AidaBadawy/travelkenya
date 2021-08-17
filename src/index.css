@@ -16,18 +16,70 @@
   background-position: center;
   height: 100vh;
   width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
 
 }
 
-.content {
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding-top: 45px;
-  padding-left: 10%;
-  padding-right: 10%;
+  position: fixed;
+  left: 0;
   top: 0;
-  
+  width:100%;
+  z-index: 1;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+  }
+  nav.active{
+  box-shadow: 5px 10px 30px rgba(0, 247, 255, 0.157);
+  background-color: #ffffff;
+  }
+  nav ul{
+  display: flex;
+  }
+
+  nav ul li a{
+    font-family: calibri;
+    height:40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#000000;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+    }
+    nav ul li a:after{
+      content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  margin: auto;
+  transition: .4s;
+      }
+
+      nav ul li a:hover:after{
+        width: 100%;
+      }
+
+    nav .menu-btn,
+.menu-icon{
+  display:none;
 }
 
 .logo {
