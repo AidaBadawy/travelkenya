@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+  padding-left: 10%;
+  padding-right: 10%;
+  top: 0;
+  
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  margin-right: auto;
+}
+
+span {
+  font-weight: 400;
+}
+
+.content ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.content ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.content ul li:after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  margin: auto;
+  transition: .4s;
+}
+
+.content ul li:hover:after {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+h1 {
+  color: white;
+  margin: 20px 0 30px;
+  font-size: 75px;
+  line-height: 85px;
+}
+
+.car-view{
+  width: 35%;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  display: block;
+}
+
+.image {
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  background-size: cover;
+  background-position: center;
+
+}
+.slider-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.text-one{
+  color: white;
+  letter-spacing: 0.4rem;
+}
+.text-two {
+  color: white;
+  letter-spacing: 0.2rem;
+  margin-right: 38px;
+}
+
+.right-arrow{
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow{
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow:hover{
+  color: black;
+  transition: ease-in-out;
+}
+
+.right-arrow:hover{
+  color: black;
+  transition: ease-in-out;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#statistics{
+width:100%;
+height: 150vh;
+margin-top: 10px;
+background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(./images/kenya-back.png);
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+padding: 50px 5% 0px 5%;
+position: relative;
+}
+
+.statistics-model{
+  width: 50%;
+}
+.statistics-model img{
+width: 600px;
+}
+
+.statistics-model-two{
+display: flex;
+position: relative;
+align-items: center;
+justify-content: space-between;
+margin-top: 20px;
+}
+.statistics-model-two img{
+width: 200px;
+margin: 5px;
+transform: translate(-15%);
+}
+
+.features-text{
+  width: 48%;
+  color: burlywood;
+  list-style: circle;
+}
+.features-text h1{
+color:brown;
+font-weight: bold;
+}
+.features-text h1{
+margin-bottom: 30px;
+padding: 0px;
+justify-content: flex-end;
+}
+.features-text p{
+font-size: 1.2rem;
+color:#535353;
+transform: translate(-40%);
+
+}
+.dest {
+  top: 50%;
+  position: absolute;
+  width: 95%;
+ 
+}
+.destination hr {
+  width:50%;
+  height: 50%;
+  text-align:left;
+  margin-left:0
+}
+.destination h1 {
+  color:brown;
+}
+
+.right-arrow-dest{
+  font-size: 3rem;
+  color: grey;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow-dest{
+  font-size: 3rem;
+  color: grey;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow-dest:hover{
+  color: brown;
+  transition: ease-in-out;
+}
+
+.right-arrow-dest:hover{
+  color: brown;
+  transition: ease-in-out;
+}
+
+.text-one-dest{
+  color: brown;
+  letter-spacing: 0.4rem;
+}
+.text-two-dest {
+  color: brown;
+  letter-spacing: 0.2rem;
+  margin-right: 25px;
+}
+
+.slider-detail-dest {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
